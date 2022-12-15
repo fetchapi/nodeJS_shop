@@ -1,0 +1,30 @@
+{
+  "name": "nodejs_shop",
+  "version": "1.0.0",
+  "description": "assigment on making a api and useing it",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SlankehWeb/nodeJS_shop.git"
+  },
+  "author": "kasper madsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SlankehWeb/nodeJS_shop/issues"
+  },
+  "homepage": "https://github.com/SlankehWeb/nodeJS_shop#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.26.0"
+  }
+}
