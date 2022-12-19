@@ -53,6 +53,33 @@ class UserController {
 			res.sendStatus(418)
 		}
 	}
+	update = async (req, res) => {
+		const { id } = req.params || 0
+		const { firstname, lastname, email, password, org_id } = req.body;
+
+		if(id && firstname && lastname && email && password && org_id) {	
+			const model = await UserModel.update(req.body, {
+				where: { id: id },
+				individualHooks: true
+			})
+
+			res.json({ 
+				msg: 'Record update' 
+			})
+		} else {
+			res.sendStatus(418)
+		}	
+	}
+		/**
+	 * Method delete - delete based on id (url param)
+	 * @param {Object} req Express Request Object
+	 * @param {Object} res Express Response Object
+	 */
+		delete = (req, res) => {
+			res.send('delete product')
+			console.log(req.params.id);
+	
+		}
 }
 
 export default UserController
